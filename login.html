@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sign In | Imgly</title>
+    <meta name="description" content="Image sharing platform" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/favicon.png" type="image/png"/>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png"/>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+    /* For Desktop */
+      @media (min-width: 992px) {
+        .container {
+          width: 400px;
+        }
+      }
+    /* For Tablets */
+      @media (min-width: 600px) {
+        .container {
+          width: 400px;
+        }
+      }
+    /* For Mobile */
+      @media (max-width: 600px) {
+        .container {
+          width: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-primary">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+              <img src="img/logo-white.svg" height="30" alt="" />
+            </a>
+      
+            <!-- Toggler/collapsible Button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapsibleNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="explore.html"><i class="fas fa-compass"></i> Explore</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="editors.html"><i class="fas fa-star"></i> Editor's Choice</a>
+                </li>
+              </ul>
+              <div class="my-2 my-lg-0">
+                  <a class="btn btn-sm btn-light button-sign" href="login.html"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+                  <a class="btn btn-sm btn-outline-light button-register" href="register.html"><i class="far fa-edit"></i> Register</a>
+              </div>
+            </div>  
+          </nav>
+          <!-- Navigation End -->
+      
+
+    <!-- Sign In -->
+    <div class="container" style="padding-top: 100px;">
+      <div class="card">
+        <article class="card-body">
+          <a href="register.html" class="float-right btn btn-outline-primary"
+            >Register</a
+          >
+          <h4 class="card-title mb-4 mt-1">Sign in</h4>
+          <p>
+            <a href="#" class="btn btn-block btn-outline-info">
+              <i class="fab fa-twitter"></i> Login with Twitter</a
+            >
+            <a href="#" class="btn btn-block btn-outline-primary">
+              <i class="fab fa-facebook-f"></i> Login with Facebook</a
+            >
+            <a href="#" class="btn btn-block btn-outline-danger">
+              <i class="fab fa-google"></i> Login with Google</a
+            >
+          </p>
+          <hr />
+          <form>
+            <div class="form-group">
+              <input
+                name=""
+                class="form-control"
+                placeholder="Email address"
+                type="email"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                placeholder="Password"
+                type="password"
+              />
+            </div>
+            <!-- form-group// -->
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary btn-block">
+                    Login
+                  </button>
+                </div>
+                <!-- form-group// -->
+              </div>
+              <div class="col-md-6 text-right">
+                <a class="small" href="forget.html">Forgot your password?</a>
+              </div>
+            </div>
+            <!-- .row// -->
+          </form>
+        </article>
+      </div>
+      <!-- card.// -->
+    </div>
+  </body>
+</html>

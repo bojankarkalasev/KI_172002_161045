@@ -11,18 +11,19 @@
     <title>Imgly</title>
     <meta name="description" content="Image sharing platform" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Roboto Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Google Material Icons Font -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" href="img/favicon.png" type="image/png"/>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png"/>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -32,31 +33,39 @@
       </p>
     <![endif]-->
 
-      <!-- Navigation -->
-      <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">
-          <img src="img/logo-white.png" height="30" alt="" />
-        </a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-primary">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <img src="img/logo-white.svg" height="30" alt="" />
+      </a>
 
-        <!-- Links -->
-        <ul class="navbar-nav">
+      <!-- Toggler/collapsible Button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">Link 1</a>
+            <a class="nav-link" href="#"><i class="fas fa-compass"></i> Explore</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link 3</a>
+            <a class="nav-link" href="#"><i class="fas fa-star"></i> Editor's Choice</a>
           </li>
         </ul>
-      </nav>
-      <!-- Navigation End -->
-
-    <!-- Scripts -->
-    <script src="" async defer></script>
-    <script src="js/bootstrap.min.js"></script>    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <div class="my-2 my-lg-0">
+            <a class="btn btn-sm btn-light button-sign" href="login.html"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+            <a class="btn btn-sm btn-outline-light button-register" href="register.html"><i class="far fa-edit"></i> Register</a>
+        </div>
+      </div>  
+    </nav>
+    <!-- Navigation End -->
   </body>
 </html>

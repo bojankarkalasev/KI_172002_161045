@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Register | Imgly</title>
+    <meta name="description" content="Image sharing platform" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/favicon.png" type="image/png"/>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png"/>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+    /* For Desktop */
+      @media (min-width: 992px) {
+        .container {
+          width: 800px;
+        }
+      }
+    /* For Tablets */
+      @media (min-width: 600px) {
+        .container {
+          width: 800px;
+        }
+      }
+    /* For Mobile */
+      @media (max-width: 600px) {
+        .container {
+          width: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-primary">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+              <img src="img/logo-white.svg" height="30" alt="" />
+            </a>
+      
+            <!-- Toggler/collapsible Button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapsibleNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="explore.html"><i class="fas fa-compass"></i> Explore</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="editors.html"><i class="fas fa-star"></i> Editor's Choice</a>
+                </li>
+              </ul>
+              <div class="my-2 my-lg-0">
+                  <a class="btn btn-sm btn-light button-sign" href="login.html"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+                  <a class="btn btn-sm btn-outline-light button-register" href="register.html"><i class="far fa-edit"></i> Register</a>
+              </div>
+            </div>  
+        </nav>
+          <!-- Navigation End -->
+      
+
+    <!-- Sign In -->
+    <div class="container" style="padding-top: 20px;">
+      <div class="card">
+        <article class="card-body">
+          <a href="login.html" class="float-right btn btn-outline-primary"
+            >Sign In</a
+          >
+          <h4 class="card-title mb-4 mt-1">Register</h4>
+          <hr />
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputFirstName">First Name</label>
+                <input type="text" class="form-control" id="inputFirstName" placeholder="Enter your First Name">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputLastName">Last Name</label>
+                <input type="text" class="form-control" id="inputLastName" placeholder="Enter your Last Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="example@example.com">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputPassword">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Enter your Password">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputConfirmPassword">Confirm Password</label>
+                <input type="password" class="form-control" id="inputConfirmPassword" placeholder="Enter your Password again">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputSex">Sex</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="inputSex" id="inputSex1" value="male" checked>
+                <label class="form-check-label" for="inputSex1">
+                  Male
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="inputSex" id="inputSex2" value="female">
+                <label class="form-check-label" for="inputSex2">
+                  Female
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="inputSex" id="inputSex3" value="other">
+                <label class="form-check-label" for="inputSex3">
+                  Other
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputCountry">Country</label>
+                <select id="inputCountry" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>North Macedonia</option>
+                  <option>United States of America</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  I accept the <a href="terms.html" target="_blank">Terms & Conditions</a>.
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+          </form>
+        </article>
+      </div>
+      <!-- card.// -->
+    </div>
+  </body>
+</html>
