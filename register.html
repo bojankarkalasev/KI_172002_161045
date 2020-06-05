@@ -11,8 +11,8 @@
     <title>Register | Imgly</title>
     <meta name="description" content="Image sharing platform" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="img/favicon.png" type="image/png"/>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png"/>
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
     <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -35,22 +35,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <style>
-    /* For Desktop */
+      /* For Desktop */
       @media (min-width: 992px) {
-        .container {
+        #register-container.container {
           width: 800px;
+          padding-top: 50px;
+          padding-bottom: 50px;
         }
       }
-    /* For Tablets */
+      /* For Tablets */
       @media (min-width: 600px) {
-        .container {
+        #register-container.container {
           width: 800px;
+          padding-top: 50px;
+          padding-bottom: 50px;
         }
       }
-    /* For Mobile */
+      /* For Mobile */
       @media (max-width: 600px) {
-        .container {
+        #register-container.container {
           width: 500px;
+          padding-top: 50px;
+          padding-bottom: 50px;
         }
       }
     </style>
@@ -63,44 +69,53 @@
       </p>
     <![endif]-->
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-primary">
-            <!-- Brand -->
-            <a class="navbar-brand" href="#">
-              <img src="img/logo-white.svg" height="30" alt="" />
-            </a>
-      
-            <!-- Toggler/collapsible Button -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapsibleNavbar"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-      
-            <!-- Links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="explore.html"><i class="fas fa-compass"></i> Explore</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="editors.html"><i class="fas fa-star"></i> Editor's Choice</a>
-                </li>
-              </ul>
-              <div class="my-2 my-lg-0">
-                  <a class="btn btn-sm btn-light button-sign" href="login.html"><i class="fas fa-sign-in-alt"></i> Sign In</a>
-                  <a class="btn btn-sm btn-outline-light button-register" href="register.html"><i class="far fa-edit"></i> Register</a>
-              </div>
-            </div>  
-        </nav>
-          <!-- Navigation End -->
-      
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-primary">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <img src="img/logo-white.svg" height="30" alt="" />
+      </a>
 
-    <!-- Sign In -->
-    <div class="container" style="padding-top: 20px;">
+      <!-- Toggler/collapsible Button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="explore.html"
+              ><i class="fas fa-compass"></i> Explore</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="editors.html"
+              ><i class="fas fa-star"></i> Editor's Choice</a
+            >
+          </li>
+        </ul>
+        <div class="my-2 my-lg-0">
+          <a class="btn btn-sm btn-light button-sign" href="login.html"
+            ><i class="fas fa-sign-in-alt"></i> Sign In</a
+          >
+          <a
+            class="btn btn-sm btn-outline-light button-register"
+            href="register.html"
+            ><i class="far fa-edit"></i> Register</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation End -->
+
+    <!-- Register -->
+    <div class="container" id="register-container">
       <div class="card">
         <article class="card-body">
           <a href="login.html" class="float-right btn btn-outline-primary"
@@ -112,43 +127,87 @@
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputFirstName">First Name</label>
-                <input type="text" class="form-control" id="inputFirstName" placeholder="Enter your First Name">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputFirstName"
+                  placeholder="Enter your First Name"
+                />
               </div>
               <div class="form-group col-md-6">
                 <label for="inputLastName">Last Name</label>
-                <input type="text" class="form-control" id="inputLastName" placeholder="Enter your Last Name">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputLastName"
+                  placeholder="Enter your Last Name"
+                />
               </div>
             </div>
             <div class="form-group">
               <label for="inputEmail">Email</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="example@example.com">
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                placeholder="example@example.com"
+              />
             </div>
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputPassword">Password</label>
-                <input type="password" class="form-control" id="inputPassword" placeholder="Enter your Password">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword"
+                  placeholder="Enter your Password"
+                />
               </div>
               <div class="form-group col-md-6">
                 <label for="inputConfirmPassword">Confirm Password</label>
-                <input type="password" class="form-control" id="inputConfirmPassword" placeholder="Enter your Password again">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputConfirmPassword"
+                  placeholder="Enter your Password again"
+                />
               </div>
             </div>
             <div class="form-group">
               <label for="inputSex">Sex</label>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="inputSex" id="inputSex1" value="male" checked>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inputSex"
+                  id="inputSex1"
+                  value="male"
+                  checked
+                />
                 <label class="form-check-label" for="inputSex1">
                   Male
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="inputSex" id="inputSex2" value="female">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inputSex"
+                  id="inputSex2"
+                  value="female"
+                />
                 <label class="form-check-label" for="inputSex2">
                   Female
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="inputSex" id="inputSex3" value="other">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inputSex"
+                  id="inputSex3"
+                  value="other"
+                />
                 <label class="form-check-label" for="inputSex3">
                   Other
                 </label>
@@ -156,16 +215,26 @@
             </div>
             <div class="form-group">
               <label for="inputAddress">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="1234 Main St"
+              />
             </div>
             <div class="form-group">
               <label for="inputAddress2">Address 2</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress2"
+                placeholder="Apartment, studio, or floor"
+              />
             </div>
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputCity">City</label>
-                <input type="text" class="form-control" id="inputCity">
+                <input type="text" class="form-control" id="inputCity" />
               </div>
               <div class="form-group col-md-4">
                 <label for="inputCountry">Country</label>
@@ -177,22 +246,122 @@
               </div>
               <div class="form-group col-md-2">
                 <label for="inputZip">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
+                <input type="text" class="form-control" id="inputZip" />
               </div>
             </div>
             <div class="form-group">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                />
                 <label class="form-check-label" for="gridCheck">
-                  I accept the <a href="terms.html" target="_blank">Terms & Conditions</a>.
+                  I accept the
+                  <a href="terms.html" target="_blank">Terms & Conditions</a>.
                 </label>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Register</button>
+            <button type="submit" class="btn btn-primary btn-block">
+              Register
+            </button>
           </form>
         </article>
       </div>
       <!-- card.// -->
     </div>
+    <!-- Register End -->
+
+    <!-- Footer -->
+    <footer class="p-5 bg-theme text-small">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-3">
+                <h5 class="text-black">Community</h5>
+                <ul class="list-unstyled">
+                  <li><a href="explore.html" target="_blank">Explore</a></li>
+                  <li>
+                    <a href="editors.html" target="_blank">Editor's Choice</a>
+                  </li>
+                  <li><a href="login.html" target="_blank">Sign In</a></li>
+                  <li><a href="register.html" target="_blank">Register</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-12 col-md-9">
+                <div class="row">
+                  <div class="col-12 col-sm-4">
+                    <h5 class="text-black">Policies</h5>
+                    <ul class="list-unstyled">
+                      <li><a href="terms.html" target="_blank">Terms</a></li>
+                      <li><a href="privacy.html" target="_blank">Privacy</a></li>
+                      <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-sm-4">
+                    <h5 class="text-black">Social</h5>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-facebook"></i> Facebook</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-twitter"></i> Twitter</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-instagram"></i> Instagram</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fab fa-linkedin"></i> LinkedIn</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-sm-4">
+                    <img
+                      src="img/logo-black.svg"
+                      style="height: 50px;"
+                      class="mb-5"
+                      alt=""
+                    />
+                    <ul
+                      class="list-unstyled list-inline"
+                      style="margin-top: -25px;"
+                    >
+                      <li class="list-inline-item">
+                        <a href="#" target="_blank"
+                          ><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                            style="height: 30px;"
+                            class="mb-3"
+                            alt=""
+                        /></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" target="_blank"
+                          ><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                            style="height: 30px;"
+                            class="mb-3"
+                            alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="col-12 text-center bottom-footer-text">
+              <p>© 2020 Imgly Inc. All Rights Reserved.</p>
+            </div>
+          </div>
+    </footer>
+    <!-- Footer End -->
   </body>
 </html>

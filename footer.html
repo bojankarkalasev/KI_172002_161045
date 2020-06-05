@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Sign In | Imgly</title>
+    <title>Imgly</title>
     <meta name="description" content="Image sharing platform" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="img/favicon.png" type="image/png" />
@@ -34,32 +34,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <style>
-      /* For Desktop */
-      @media (min-width: 992px) {
-        #sign-in-container.container.container {
-          width: 400px;
-          padding-bottom: 100px;
-          padding-top: 100px;
-        }
-      }
-      /* For Tablets */
-      @media (min-width: 600px) {
-        #sign-in-container.container.container {
-          width: 400px;
-          padding-bottom: 100px;
-          padding-top: 100px;
-        }
-      }
-      /* For Mobile */
-      @media (max-width: 600px) {
-        #sign-in-container.container {
-          width: 400px;
-          padding-bottom: 100px;
-          padding-top: 100px;
-        }
-      }
-    </style>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -68,109 +42,6 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-primary">
-      <!-- Brand -->
-      <a class="navbar-brand" href="#">
-        <img src="img/logo-white.svg" height="30" alt="" />
-      </a>
-
-      <!-- Toggler/collapsible Button -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#collapsibleNavbar"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Links -->
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="explore.html"
-              ><i class="fas fa-compass"></i> Explore</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="editors.html"
-              ><i class="fas fa-star"></i> Editor's Choice</a
-            >
-          </li>
-        </ul>
-        <div class="my-2 my-lg-0">
-          <a class="btn btn-sm btn-light button-sign" href="login.html"
-            ><i class="fas fa-sign-in-alt"></i> Sign In</a
-          >
-          <a
-            class="btn btn-sm btn-outline-light button-register"
-            href="register.html"
-            ><i class="far fa-edit"></i> Register</a
-          >
-        </div>
-      </div>
-    </nav>
-    <!-- Navigation End -->
-
-    <!-- Sign In -->
-    <div class="container" id="sign-in-container">
-      <div class="card">
-        <article class="card-body">
-          <a href="register.html" class="float-right btn btn-outline-primary"
-            >Register</a
-          >
-          <h4 class="card-title mb-4 mt-1">Sign in</h4>
-          <p>
-            <a href="#" class="btn btn-block btn-outline-info">
-              <i class="fab fa-twitter"></i> Login with Twitter</a
-            >
-            <a href="#" class="btn btn-block btn-outline-primary">
-              <i class="fab fa-facebook-f"></i> Login with Facebook</a
-            >
-            <a href="#" class="btn btn-block btn-outline-danger">
-              <i class="fab fa-google"></i> Login with Google</a
-            >
-          </p>
-          <hr />
-          <form>
-            <div class="form-group">
-              <input
-                name=""
-                class="form-control"
-                placeholder="Email address"
-                type="email"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                class="form-control"
-                placeholder="Password"
-                type="password"
-              />
-            </div>
-            <!-- form-group// -->
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <button type="submit" class="btn btn-primary btn-block">
-                    Login
-                  </button>
-                </div>
-                <!-- form-group// -->
-              </div>
-              <div class="col-md-6 text-right">
-                <a class="small" href="forget.html">Forgot your password?</a>
-              </div>
-            </div>
-            <!-- .row// -->
-          </form>
-        </article>
-      </div>
-      <!-- card.// -->
-    </div>
-    <!-- Sign In End -->
 
     <!-- Footer -->
     <footer class="p-5 bg-theme text-small">
