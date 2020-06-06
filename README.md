@@ -31,18 +31,19 @@
 
 # Упатство
 Јавниот дел е составен од:
-* Почетна (Explore) (`index.html`) - Се пристапува преку главната навигација
-* Editor's Choice (`editors.html`) - - Се пристапува преку главната навигација
-* Sign In (`login.html`) - Се пристапува преку главната навигација
-* Reset password (`forgot.html`) - Се пристапува преку копче на страницата `login.html`
-* Register (`register.html`) - Се пристапува преку главната навигација
-* Тerms (`terms.html`) - Се пристапува преку Footer
-* Privacy (`privacy.html`)  - Се пристапува преку Footer
-* Contact (`contact.html`) - Се пристапува преку Footer
+* Почетна (Explore) (`index.html`) - Се пристапува преку главната навигација - [(Линк)](http://sites.visionsolutions.mk/imgly/)
+* Editor's Choice (`editors.html`) - Се пристапува преку главната навигација - [(Линк)](http://sites.visionsolutions.mk/imgly/editors.html)
+* Page Not Found (`404.html`) - Се пристапува преку рачно внесување на `/404.html` - [(Линк)](http://sites.visionsolutions.mk/imgly/404.html)
+* Sign In (`login.html`) - Се пристапува преку главната навигација - [(Линк)](http://sites.visionsolutions.mk/imgly/login.html)
+* Reset password (`forgot.html`) - Се пристапува преку копче на страницата `login.html` - [(Линк)](http://sites.visionsolutions.mk/imgly/forgot.html)
+* Register (`register.html`) - Се пристапува преку главната навигација - [(Линк)](http://sites.visionsolutions.mk/imgly/register.html)
+* Тerms (`terms.html`) - Се пристапува преку Footer - [(Линк)](http://sites.visionsolutions.mk/imgly/terms.html)
+* Privacy (`privacy.html`)  - Се пристапува преку Footer - [(Линк)](http://sites.visionsolutions.mk/imgly/privacy.html)
+* Contact (`contact.html`) - Се пристапува преку Footer - [(Линк)](http://sites.visionsolutions.mk/imgly/contact.html)
 
 До Корисничкиот дел се пристапува преку кликање на копчето `Login` на страницата Sign In (`login.html`) и тој е составен од:
-* Feed (`user-index.html`)
-* Explore (`user-explore.html`)
-* Editor's Choice (`user-editors.html`)
-* Profile (`user-profile.html`)
-* Submit a photo (`user-upload.html`)
+* Feed (`user-index.html`) - [(Линк)](http://sites.visionsolutions.mk/imgly/user-index.html)
+* Explore (`user-explore.html`) - [(Линк)](http://sites.visionsolutions.mk/imgly/user-explore.html)
+* Editor's Choice (`user-editors.html`) - [(Линк)](http://sites.visionsolutions.mk/imgly/user-editors.html)
+* Profile (`user-profile.html`) - [(Линк)](http://sites.visionsolutions.mk/imgly/user-profile.html)
+* Submit a photo (`user-upload.html`) - [(Линк)](http://sites.visionsolutions.mk/imgly/user-upload.html)
