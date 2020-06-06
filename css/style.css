@@ -6,6 +6,10 @@
     color: #e81e62 !important;
 }
 
+.button-submit:hover {
+    color: #e81e62 !important;
+}
+
 footer {
     margin: 0;
     font-family: Roboto, sans-serif;
@@ -41,14 +45,13 @@ footer ul li a:hover {
 }
 
 footer .bottom-footer-text {
-    color: #e91e63 !important;
+    color: #e91e63!important;
     font-size: 16px !important;
 }
 
 footer hr {
     border-top: 1px solid #e0e0e0
 }
-
 
 .thumbnail { padding-bottom: 4px; border-radius: 3px; line-height: 13px; border: 1px solid #EEE; position: relative; box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.034); transition: all 0.25s ease; }
 .thumbnail a:hover { text-decoration: none; }
@@ -67,5 +70,3 @@ footer hr {
 .galPad {
     padding: 5px;
 }
-
-

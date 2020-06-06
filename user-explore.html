@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- Scripts -->
     <script src="https://kit.fontawesome.com/cbc783e96b.js" crossorigin="anonymous"></script>
@@ -34,39 +35,57 @@
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-primary">
-    <!-- Brand -->
-    <a class="navbar-brand" href="#">
-        <img src="img/logo-white.svg" height="30" alt="" />
-    </a>
-
-    <!-- Toggler/collapsible Button -->
-    <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#collapsibleNavbar"
-    >
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Links -->
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+          <img src="img/logo-white.svg" height="30" alt="" />
+        </a>
+  
+        <!-- Toggler/collapsible Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-compass"></i> Explore</a>
+              <a class="nav-link" href="user-index.html"><i class="fas fa-comment"></i> Feed</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href=""><i class="fas fa-compass"></i> Explore</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-star"></i> Editor's Choice</a>
+              <a class="nav-link" href="user-editors.html"><i class="fas fa-star"></i> Editor's Choice</a>
             </li>
-        </ul>
-        <div class="my-2 my-lg-0">
-            <a class="btn btn-sm btn-light button-sign" href="login.html"><i class="fas fa-sign-in-alt"></i> Sign In</a>
-            <a class="btn btn-sm btn-outline-light button-register" href="register.html"><i class="far fa-edit"></i> Register</a>
-        </div>
-    </div>
+          </ul>
+          <ul class="navbar-nav my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="btn btn-sm btn-outline-light button-submit" href="user-upload.html"><i class="fas fa-plus"></i> Submit a photo</a>
+            </li>
+            <li class="nav-item">
+              <ul class="navbar-nav my-2 my-lg-0 ">
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle navbar-dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="img/profile.jpg" width="25" height="25" class="rounded-circle">John Smith
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="user-profile.html">Profile</a>
+                  <a class="dropdown-item" href="forget.html">Reset Password</a>
+                  <a class="dropdown-item" href="index.html">Log Out</a>
+                </div>
+              </li>   
+            </ul>
+            </li>
+            </ul>
+        </div>  
 </nav>
 <!-- Navigation End -->
-
+  
 <!-- Explore -->
 <div class="container-fluid"  style="padding: 20px 40px; background-color: #F6F6F6;">
     <div class="row" >
