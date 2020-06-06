@@ -19,12 +19,43 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link href="css/tagsinput.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="js/tagsinput.js"></script>
+    <style>
+      .upload-container {
+        border-width: 2px;
+        border-style: dashed;
+        border-color: #9e9e9e;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background-color: #fafafa;
+      }
+
+      .upload-container:hover {
+        border-color: #e81e62;
+      }
     
+      .upload-container h5 {
+        text-align: center;
+      }
+
+      .upload-container #img-upload, #upload-photo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding-bottom: 20px;
+      }
+
+      .upload-rules li {
+        color: #616161;
+      }
+    </style>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -88,6 +119,88 @@
     <!-- Navigation End -->
 
     <!-- Submit a photo -->
+    <div class="container-fluid" style="padding: 20px 0px 20px 30px;">
+      <h2> Hi John, </h2>
+      <h6>Thanks for contributing to Imgly! You’re awesome. To save you time and increase your chance of being featured, please ensure that your photos meet our <a href="terms.html" target="_blank">submission guidelines</a>.
+    </div>  
+    <div class="container">
+      <form action="user-index.html" method="POST">
+        <div class="row">
+          <div class="col-sm">
+            <div class="upload-container">
+              <img id="img-upload" id="btn-upload" src="img/add_image.svg" height="100px"/>
+              <h5>Drop your images here or</h5>
+              <input type="file" id="upload-photo"/>
+            </div>
+            <div class="row upload-rules" style="padding-top: 20px;">
+            <div class="col-sm">
+              <ul>
+                <li><b>High quality</b> photos (at least <b>2MP</b>)</li>
+                <li>Photos are <b>clear & original</b></li>
+                <li>Respect the intellectual property of others</li>
+              </ul>
+            </div>
+            <div class="col-sm">
+              <li>Only upload photos you <b>own the rights</b> to</li>
+              <li>Zero tolerance for nudity, violence or hate</li>
+              <li>Read the <a href="terms.html" target="_blank">Imgly terms</a></li>
+            </div>
+            </div>
+          </div>
+          <div class="upload-form col-sm" style="padding-top: 20px;">
+            <h4>Photo details</h4>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Add this photo(s) to an album?
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputState">Privacy</label>
+              <select id="inputState" class="form-control">
+                <option selected>Public</option>
+                <option>Private</option>
+                <option>Selected users</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="inputTitle">Title</label>
+              <input type="text" class="form-control" id="inputTitle" placeholder="Enter your photo's title">
+            </div>
+            <div class="form-group">
+              <label for="comment">Description</label>
+              <textarea class="form-control" rows="3" id="comment"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="inputLocation">Location</label>
+              <input type="text" class="form-control" id="inputLocation" placeholder="Where was your photo taken?">
+            </div>
+            <div class="form-group">
+              <label for="inputTags">Tags</label>
+              <input type="text" class="form-control" id="inputTags" data-role="tagsinput" value="Personal">
+            </div>
+            <div class="form-group">
+              <label for="inputCategory">Category</label>
+              <select id="inputCategory" class="form-control">
+                <option selected>Personal</option>
+                <option>Travel</option>
+                <option>Nature</option>
+                <option>People</option>
+                <option>Technology</option>
+                <option>Architecture</option>
+                <option>Interiors</option>
+                <option>Food</option>
+                <option>Animals</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Upload</button>
+            <a href="user-feed.html" class="btn btn-link">Cancel</a>
+          </div>
+        </div>
+      </form>
+    </div>
     <!-- Submit a photo End -->
 
     <!-- Footer -->
