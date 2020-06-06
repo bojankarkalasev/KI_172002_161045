@@ -1,9 +1,6 @@
 # TO DO ITEMS
 
-0. Public > Index > Submenu in Index
-1. Public > Editor's Choice (editors.html)
-3. Signed In > Editor's Choice (user-editors.html))
-4. Signed In > Submit Picture (user-upload.html)
+1. Signed In > Submit Picture (user-upload.html)
 
 Additional:
 1. Terms (terms.html)
