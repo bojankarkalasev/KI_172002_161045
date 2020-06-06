@@ -1,12 +1,11 @@
 # TO DO ITEMS
 
-2. Public > Home
-3. Public > Explore
-4. Public > Editor's Choice
-1. Signed In > Nav bar
-5. Signed In > Feed
-6. Signed In > Profile
-7. Signed In > Upload Picture
+1. Public > Editor's Choice
+2. Signed In > Nav bar
+3. Signed In > Feed
+4. Signed In > Explore
+5. Signed In > Editor's Choice
+6. Signed In > Upload Picture
 
 Additional
 1. Terms
