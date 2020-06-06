@@ -23,6 +23,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function() {
+            $("#a > li").click(function() {
+                $("#a li a").removeClass('active');
+                $(this).children("a").addClass('active');
+
+            });
+
+
+        });
+    </script>
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -68,7 +80,48 @@
 <!-- Navigation End -->
 
 <!-- Explore -->
+
+
+<div class="container" style="padding: 20px 40px;">
+    <div class="col-sm-3 col-lg-12 justify-content-center">
+        <ul id = "a" class="nav nav-pills nav-fill justify-content-centar">
+            <li  id  ="p" class="nav-item">
+                <a  id  = "s" class="nav-link active" href="#">All</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">Travel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Nature</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">People</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Technology</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Architecture</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Interiors</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Food</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Animals</a>
+            </li>
+        </ul>
+
+    </div>
+</div>
 <div class="container-fluid"  style="padding: 20px 40px; background-color: #F6F6F6;">
+
+
     <div class="row" >
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 galPad" >
