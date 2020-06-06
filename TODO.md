@@ -1,5 +1,6 @@
 # TO DO ITEMS
 
+0. Public > Submenu in Index
 1. Public > Editor's Choice
 2. Signed In > Nav bar
 3. Signed In > Feed
